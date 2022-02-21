@@ -1,0 +1,422 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1800px;
+}
+
+/* Header */
+#header {
+    width: 100%;
+    height: 65px;
+}
+
+#header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+}
+
+#header .logo {
+    width: 25%;
+}
+
+#header .logo a {
+    color: #3cb878;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#header .menu {
+    width: 60%;
+}
+
+#header .menu ul {
+    display: flex;
+}
+
+#header .menu ul a {
+    color: #3f4853;
+    padding: 0 20px 0 30px;
+    text-transform: uppercase;
+}
+
+#header .menu ul a:hover {
+    color: #3cb878;
+}
+
+#header .sidebar-top {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#header .sidebar-top a {
+    display: block;
+    width: 30px;
+    margin-right: 20px;
+}
+
+.icon-cart-list {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.icon-cart-heading {
+    position: absolute;
+    top: -9px;
+    left: 12px;
+    padding: 1px 5px;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: #333;
+}
+
+/* Slider */
+#slider,
+.slider-item {
+    width: 100%;   
+    height: 797px; 
+}
+
+.slider-item {
+    position: relative;
+}
+
+.slider-item h2 {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    color: #333;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+
+.slider-item h2 small {
+    display: block;
+    color: #3cb878;
+}
+
+.slider-item img {
+    max-width: 100%;
+    width: 100%;
+}
+
+/* Best Seller */
+#best-seller {
+    width: 100%;
+    margin-top: 60px;
+    display: block;
+}
+
+ul.product-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul.product-list li {
+    width: 20%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+ul.product-list a {
+    color: #333;
+    font-size: 1rem;
+    display: block;
+}
+
+ul.product-list li p {
+    color: #3cb878;
+    margin-top: 10px;
+}
+
+ul.product-list li img {
+    max-width: 300px;
+    box-shadow: 0px 0px 2px #aa9f9f;
+    margin-bottom: 10px;
+}
+
+ul.product-list li.introduce {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+ul.product-list li.introduce h2 {
+    text-transform: uppercase;
+    color: #333;
+}
+
+ul.product-list li.introduce small {
+    color: #3cb878;
+    line-height: 20px;
+}
+
+ul.product-list li.introduce p {
+    color: #333;
+    font-size: 0.9rem;
+    max-width: 90%;
+}
+
+ul.product-list li:hover div.buy {
+    display: block;
+}
+
+
+ul.product-list div.buy {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    right: 60px;
+    display: none;
+    animation: fadeIn ease-in 0.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+ul.product-list div.buy a {
+    display: block;
+    width: 45px;
+    height: 45px;
+    background-color: #62c592;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.item-icon {
+    position: absolute;
+    font-size: 1.5rem;
+    left: 11px;
+    top: 11px;
+    color: #fff;
+}
+
+a.add-to-cart .item-icon {
+    top: 11px;
+    left: 8px;
+}
+
+/* Shipping */
+#shipping {
+    background: #f5f6f9;
+    padding: 50px 0;
+    margin-top: 35px;
+}
+
+#shipping ul {
+    display: flex;
+}
+
+#shipping ul li {
+    width: 25%;
+    text-align: center;
+}
+
+#shopping ul li h2 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+#shopping ul li small {
+    color: #888;
+    font-size: 13px;
+}
+
+/* Promotion */
+#promotion {
+    background: #2e3348;
+}
+
+#promotion ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+#promotion ul li {
+    width: 30%;
+    text-align: center;
+    display: block;
+    padding: 40px 0;
+} 
+
+#promotion ul li:nth-child(2) {
+    background-color: #34394f;
+}
+
+#promotion ul li img {
+    width: 80%;
+}
+
+/* Feature-product */
+#feature-product h2 {
+    text-align: center;
+    text-decoration: uppercase;
+    color: #333;
+    margin-top: 50px;
+}
+
+#feature-product small {
+    display: block;
+    text-align: center;
+    color: #3cb878;
+    font-size: 12px;
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+
+/* Discount &Brands */
+#brands {
+    display: flex;
+    width: 100%;
+}
+
+.disscount,
+.brands {
+    width: 50%;
+    height: 250px;
+}
+
+#brands .disscount {
+    background: #2b3042 url(/assets/img/bgform.jpg) no-repeat ;
+    text-align: center;
+    background-size: cover;
+}
+
+#brands .disscount div.text h2 {
+    color: #fff;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+#brands .disscount div.text p {
+    max-width: 400px;
+    line-height: 25px;
+    font-size: 0.8rem;
+    margin: 0 auto 30px;
+    color: #fff;
+}
+
+#brands .disscount form input {
+    width: 300px;
+    padding: 8px;
+}
+
+#brands .disscount form button {
+    background-color: #3cb878;
+    color: #fff;
+    border: 1px solid transparent;
+    padding: 9px;
+}
+
+#brands .brands {
+    background: #f5f6f9;
+}
+
+#brands .brands ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    height: 250px;
+    align-items: center;
+}
+
+#brands .brands ul li a {
+    width: 130px;
+    height: 130px;
+    background: url(/assets/img/brand.png) no-repeat;
+    display: block;
+}
+
+#brands .brands ul li:nth-child(2) a {
+    background-position: -233px;
+}
+
+#brands .brands ul li:nth-child(3) a {
+    background-position: -460px;
+    width: 135px;
+}
+
+#brands .brands ul li:nth-child(4) a {
+    background-position: -690px;
+    width: 135px;
+}
+
+/* Footer */
+#footer {
+    background: #000;
+    height: 50px;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.f-left, 
+.f-right {
+    width: 50%;
+}
+
+.f-left {
+    text-align: center;
+}
+
+.f-right ul {
+    display: flex;
+    max-width: 300px;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+.f-right ul li a {
+    display: block;
+    width: 50px;
+    height: 30px;
+    background: url(/assets/img/payment.png) no-repeat;
+}
+
+.f-right ul li:nth-child(2) a {
+    background-position: -60px;
+}
+
+.f-right ul li:nth-child(3) a {
+    background-position: -180px;
+}
+
+.f-right ul li:nth-child(4) a {
+    background-position: -240px;
+}
+

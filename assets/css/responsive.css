@@ -1,0 +1,131 @@
+/* PC */
+@media (min-width: 64em){
+
+}
+
+
+
+/* tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em){
+
+}
+
+/* mobile */
+@media (max-width: 46.1875em){
+    .menu {
+        display: none;
+    }
+
+    #header .logo {
+        margin-left: 15px;
+        width: 50%;
+    }
+    
+    #slider, .slider-item {
+        height: auto;
+    }
+
+    .slider-item h2 {
+        top: 55px;
+        left: 15px;
+        font-size: 1rem;
+        letter-spacing: 4px;
+    }
+
+    #best-seller {
+        margin-top: 20px;
+    }
+
+    ul.product-list {
+        justify-content: space-between;
+    }
+
+    ul.product-list li.introduce {
+        width: 100%;
+        align-items: center;
+    }
+
+    ul.product-list li p {
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    ul.product-list li {
+        width: 45%;
+        margin: 0 9px 20px;
+    }
+
+    ul.product-list li img {
+        max-width: 100%;
+        margin-bottom: 5px;
+    }
+
+    ul.product-list div.buy {
+        right: 0px;
+    }
+
+    #shipping {
+        margin-top: 20px;
+        padding: 30px 0;
+    }
+
+    #shipping ul {
+        flex-wrap: wrap;
+    }
+
+    #shipping ul li {
+        width: 50%;
+        min-height: 100px;
+        display: block;
+    }
+
+    #shipping ul li:nth-child(3) {
+        margin-top: 10px;
+    }
+
+    #promotion ul {
+    flex-direction: column;
+    }
+
+    #promotion ul li {
+        width: 100%;
+    }
+
+    #brands {
+        flex-direction: column;
+    }
+
+    .disscount,
+     .brands {
+        width: 100%;
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    #brands .disscount form button {
+        min-width: 300px;
+        margin-top: 10px;
+    }
+
+    .brands ul {
+        flex-wrap: wrap;
+    }
+
+    #footer {
+        flex-direction: column;
+        height: auto;
+    }
+
+    footer div {
+        width: 100% !important;
+    }
+
+    .f-left {
+        line-height: 20px;
+        margin-top: 20px;
+    }
+
+    .f-right {
+        margin: 20px 0;
+    }
+}
